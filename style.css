@@ -1,8 +1,8 @@
 body {
-    font: 20px "Gill Sans", Verdana, sans-serif;
+  font-family: "Courier New", Courier, monospace;
     line-height: 1.8;
     color: #000000;
-    background-color: #dcdcdc;
+    background-color: #f8cadc;
     padding-top: 0px !important;
   }
 
@@ -23,7 +23,7 @@ a {
 }
 
 nav {
-  background-color: #dcdcdc;
+  background-color: #e1f4d6;
   color: #EEE7E8;
   padding: 50px 0px;
 }
@@ -41,10 +41,10 @@ nav {
 }
 
 .nav-link {
-  border: 3px outset #a3a3a3;
+  border: 3px outset #d47cb7;
   border-radius: 20px;
   padding: 10px 30px;
-  background-color: #a3a3a3;
+  background-color: #83c892;
   color: #EEE7E8;
   transition: 0.3s;
 }
@@ -53,7 +53,7 @@ nav {
   border: 3px outset #FFFFFF;
   border-radius: 20px;
   padding: 10px 30px;
-  background-color: #a3a3a3;
+  background-color: #dd8aca;
   transition: 0.3s;
 }
 
@@ -103,4 +103,14 @@ code {
 
 #aboutme {
   padding: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+img {
+  width: 400px; 
+  height: 310px;
 }
