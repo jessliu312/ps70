@@ -2,7 +2,7 @@ body {
   font-family: "Courier New", Courier, monospace;
     line-height: 1.8;
     color: #000000;
-    background-color: #f8cadc;
+    background-color: #f4dce5;
     padding-top: 0px !important;
   }
 
@@ -108,7 +108,9 @@ code {
 h3 {
   font-size: 30px;
   padding-top: 50px;
+
 }
+
 
 img {
   width: 400px; 
