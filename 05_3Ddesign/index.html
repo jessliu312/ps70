@@ -9,7 +9,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark" style=" color: #EEE7E8;">
   <div style="align-items: center; justify-content: center;" class="container-fluid">
     <div class="flexrow">
-      <h2 class="nav-title">PS70 Fall 2024</h2>
+      <h2 class="nav-title">PS70 Spring 2025</h2>
     </div>
     <div class="navbar-nav">
       <h4><a class="nav-link" href="../index.html">Home</a></h4>
@@ -23,10 +23,85 @@
 <div class="textcontainer">
 <p class="margin">   </p>
 
-<h3>Week 5: 3D Design & Printing</h3>
+<h1 class="bounce">Week 5: 3D Printing!</h1>
 
-<h4>Assignment: Model and 3D print something</h4>
+<style>
+  .bounce {
+      font-size: 3em;
+      font-weight: bold;
+      color: #ff66b2;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      animation: bounce 1.5s infinite;
+  }
 
+  @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+  }
+</style>
+
+<p class = "margin"></p>
+<div class="text-box">First Time 3D Printing</div>
+
+<style>
+    .text-box {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid rgb(201, 74, 140);
+        border-radius: 5px;
+        background-color: rgb(243, 181, 218);
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
+<br>
+
+<p class = "margin"></p>
+
+I started with the idea of making a fidget toy, however, given my limited experience, I wanted to try something that could not be easily made through subtractive methods that could gurantee some degree of print success. I was inspired by a jellyfish keychain that I saw and decided to make a good 'ol chain. 
+
+Here's the process I took to make it:
+<ul>
+  <li>1. I started off building a center slot that was 20mm from each circle center and 20mm in height and a corresponding smaller slot with a 10mm height. Then, I tried extruding to make it a thicker chain shape. I was able to smooth this out  </li>
+  <image style = "width: 40%" src = "chain.jpg" alt = "draft"> </image>
+  <ul>
+    <li>Problem: I don't think this can stand on the print surface because I had filleted out the sides but even then, the chains would need to be at a non-90-degree angle on the print board. </li>
+    <image style = "width: 40%" src = "filleted.jpg" alt = "draft"> </image>
+  </ul>
+  <li>2. I tried again except taking an octagon extrusion because it's inner angles are all 45 degrees. Shoutout to geometry class. I also exported it into Prusa Slicer and realized the individual chain was way too big and I wanted to make more of them interlocking so I reduced to the dimensions to 10mm by 10mm.</li>
+  <image style = "width: 40%" src = "sketch.jpg" alt = "draft"> </image>
+  <li>3. To make the chains interlocking, I needed to find a way for them to print without touching each other but also have enough support on all sides. Hence, I turned all the chains on a 45 degree angle so they interlocked at a 90 degree angle and all chains would have a surface touching the print surface.</li>
+  <image style = "width: 40%" src = "crosssection.jpg" alt = "draft"> </image>
+</ul>
+
+
+Here's what it looked like in Prusa. A little janky with all the supports, but better than the other orientations I could think of.
+<image style = "width: 30%" src = "prusa.jpg" alt = "draft"> </image>
+<br>
+
+Here's what the final product looked like after an hour of removing the supports. I also learned that with dimensions this small, the octagonal shape doesn't even translate and it was just printed as a smooth circular tube.
+
+<image style = "width: 30%" src = "print.jpg" alt = "draft"> </image>
+<image style = "width: 30%" src = "chainfinal.jpg" alt = "draft"> </image>
+<br>
+
+<br>
+<br>
+<div class="text-box"> Taking a 3D scan of objects </div>
+<p class = "margin"></p>
+
+I decided to experiment with what my phone could capture. I downloaded Polycam -- something I could access on my phone and on my laptop!
+
+I first made a pyramid of these balls I found in my pencil case and scanned it in the photo booth in class. I also tried again in my dorm room with a little beach hat. 
+
+I learned that the background is so important because the camera picked up on even the texture of the flat surface in the photobooth. When I did it with paper, it also kept sliding as I moved around it so I eventually gave up and just used a flat, solid surface.
+<br>
+<image style = "width: 30%" src = "pyramid.jpg" alt = "draft"> </image>
+<image style = "width: 30%" src = "hat.jpg" alt = "draft"> </image>
+<image style = "width: 30%" src = "hat2.jpg" alt = "draft"> </image>
+
+If I were to do it again, I would place these on surfaces that I can access all 360 degrees around instead of having to manuever awkwardly because it made the back side of these scans turn out a little wonky. I also tried putting up a vertical white backdrop, but it seems like it actually interfered with the scan more. Perhaps there is some type of post-scan treatment that can help alleviate the lack of clarity in some areas of the scan.
 
 </div>
 </xmp>
