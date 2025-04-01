@@ -9,7 +9,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark" style=" color: #EEE7E8;">
   <div style="align-items: center; justify-content: center;" class="container-fluid">
     <div class="flexrow">
-      <h2 class="nav-title">PS70 Fall 2024</h2>
+      <h2 class="nav-title">PS70 Spring 2025</h2>
     </div>
     <div class="navbar-nav">
       <h4><a class="nav-link" href="../index.html">Home</a></h4>
@@ -23,12 +23,142 @@
 <div class="textcontainer">
 <p class="margin">   </p>
 
-<h3>Week 7: Electronic Outputs</h3>
+<h1 class="bounce">Week 7: MVP + Output</h1>
+
+<style>
+  .bounce {
+      font-size: 3em;
+      font-weight: bold;
+      color: #ff66b2;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      animation: bounce 1.5s infinite;
+  }
+
+  @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+  }
+</style>
+
+<p class = "margin"></p>
+
+
+<style>
+    .text-box {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid rgb(201, 74, 140);
+        border-radius: 5px;
+        background-color: rgb(243, 181, 218);
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
+<br>
+<div class="text-box">Inspiration:</div>
+
+<p class = "margin"></p>
+
+<ul>
+  <li>Living with 6 roommates, a big suite and lots of foot traffic</li>
+  <li>Constant messages in a group chat about missing a key</li>
+  <li>Safety concerns with leaving the key in the door given robberies and the fact that we having someone living in the common room</li>
+</ul>
+<br>
+
+<div class="text-box">Solution: KeyVault</div>
+<ul>
+  <br>
+  <image style = "width: 30%" src = "sketch.jpg" alt = "draft"> </image>
+  <image style = "width: 30%" src = "sketch2.jpg" alt = "draft"> </image>
+  <li>KeyVault, an attachable Safe that dispenses the room key like a vending machine if a correct pin is entered</li>
+  <li>Guest codes (active for a certain amount of time)</li>
+  <li>Different codes for everyone (easy for them to remember and you can see who used the key box)</li>
+  <li>Key slot on the top of the box as a key return feature</li>
+  <li>Motion/pressure sensor that detects if you didn’t return the key within 20 seconds and sets off a warning
+  </li>
+</ul>
+<br>
+
+<div class="text-box">What I have right now:</div>
+<ul>
+  <li>Proof of concept of keys that work as pin pad on a breadboard</li>
+  <image style = "width: 30%" src = "button.jpg" alt = "draft"> </image>
+  <li>3D printed Servo hinge sliding contraption </li>
+  <image style = "width: 30%" src = "doorhinge.jpg" alt = "draft"> </image>
+  <video controls style= "width: 40%">
+    <source src="hinge.mp4" type="video/mp4">
+    Door hinge
+  </video>
+  <li>Force Sensitive Resistor for key detection</li>
+</ul>
+
+<div class="text-box">Working on:</div>
+<ul>
+  <li>Connecting display and the 11 PIN keys through soldering </li>
+  <image style = "width: 30%" src = "final.jpg" alt = "draft"> </image>
+  <li>Getting all the measurements and choosing material for the box </li>
+</ul>
+
+<div class="text-box">Problems I'm still looking to solve:</div>
+<ul>
+  <li>Locking mechanism after Servo closes the latch</li>
+  <li>Override method without breaking the whole thing</li>
+  <li>What material should I use for maximum security and ease of use</li>
+  <li>Keeping everything small</li>
+</ul>
 
 
 
-<h4>Assignment: Minimum Viable Product for Final Project</h4>
 
+
+
+
+<ul>
+  <li>1. I started off building a center slot that was 20mm from each circle center and 20mm in height and a corresponding smaller slot with a 10mm height. Then, I tried extruding to make it a thicker chain shape. I was able to smooth this out  </li>
+  <image style = "width: 40%" src = "chain.jpg" alt = "draft"> </image>
+  <br>
+  <ul>
+    <li>Problem: I don't think this can stand on the print surface because I had filleted out the sides but even then, the chains would need to be at a non-90-degree angle on the print board. </li>
+    <image style = "width: 40%" src = "filleted.jpg" alt = "draft"> </image>
+    <br>
+  </ul>
+  <li>2. I tried again except taking an octagon extrusion because it's inner angles are all 45 degrees. Shoutout to geometry class. I also exported it into Prusa Slicer and realized the individual chain was way too big and I wanted to make more of them interlocking so I reduced to the dimensions to 10mm by 10mm.</li>
+  <image style = "width: 40%" src = "sketch.jpg" alt = "draft"> </image>
+  <br>
+  <li>3. To make the chains interlocking, I needed to find a way for them to print without touching each other but also have enough support on all sides. Hence, I turned all the chains on a 45 degree angle so they interlocked at a 90 degree angle and all chains would have a surface touching the print surface.</li>
+  <image style = "width: 40%" src = "crosssection.jpg" alt = "draft"> </image>
+  <br>
+  <li>Here's what it looked like in Prusa. A little janky with all the supports, but better than the other orientations I could think of.</li>
+<image style = "width: 30%" src = "prusa.jpg" alt = "draft"> </image>
+<br>
+</ul>
+
+
+
+
+Here's what the final product looked like after an hour of removing the supports. I also learned that with dimensions this small, the octagonal shape doesn't even translate and it was just printed as a smooth circular tube.
+<br>
+<image style = "width: 30%" src = "print.jpg" alt = "draft"> </image>
+<image style = "width: 30%" src = "chainfinal.jpg" alt = "draft"> </image>
+
+<br>
+<br>
+<div class="text-box"> Taking a 3D scan of objects </div>
+<p class = "margin"></p>
+
+I decided to experiment with what my phone could capture. I downloaded Polycam -- something I could access on my phone and on my laptop!
+
+I first made a pyramid of these balls I found in my pencil case and scanned it in the photo booth in class. I also tried again in my dorm room with a little beach hat. 
+
+I learned that the background is so important because the camera picked up on even the texture of the flat surface in the photobooth. When I did it with paper, it also kept sliding as I moved around it so I eventually gave up and just used a flat, solid surface.
+<br>
+<image style = "width: 30%" src = "pyramid.jpg" alt = "draft"> </image>
+<image style = "width: 30%" src = "hat.jpg" alt = "draft"> </image>
+<image style = "width: 30%" src = "hat2.jpg" alt = "draft"> </image>
+<br>
+If I were to do it again, I would place these on surfaces that I can access all 360 degrees around instead of having to manuever awkwardly because it made the back side of these scans turn out a little wonky. I also tried putting up a vertical white backdrop, but it seems like it actually interfered with the scan more. Perhaps there is some type of post-scan treatment that can help alleviate the lack of clarity in some areas of the scan.
 
 </div>
 </xmp>
