@@ -9,7 +9,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark" style=" color: #EEE7E8;">
   <div style="align-items: center; justify-content: center;" class="container-fluid">
     <div class="flexrow">
-      <h2 class="nav-title">PS70 Fall 2024</h2>
+      <h2 class="nav-title">PS70 Spring 2025</h2>
     </div>
     <div class="navbar-nav">
       <h4><a class="nav-link" href="../index.html">Home</a></h4>
@@ -23,11 +23,64 @@
 <div class="textcontainer">
 <p class="margin">   </p>
 
-<h3>Week 6: Electronic Inputs</h3>
+<h1 class="bounce">Week 6: Inputs</h1>
 
-<h4>Assignment 1: Capactive Sensor<h4>
+<style>
+  .bounce {
+      font-size: 3em;
+      font-weight: bold;
+      color: #ff66b2;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      animation: bounce 1.5s infinite;
+  }
 
-<h4>Assignment 2: [Use + Calibrate Another Sensor]</h4>
+  @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+  }
+</style>
+
+<p class = "margin"></p>
+<div class="text-box">The Light-Up Dance Floor</div>
+
+<style>
+    .text-box {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 2px solid rgb(201, 74, 140);
+        border-radius: 5px;
+        background-color: rgb(243, 181, 218);
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
+<br>
+
+When I saw the force-sensitive capacitors, I immediately thought of the game at the arcade where a square on the floor lights up as you step on it. Hence, I set out to create that.
+<br>
+<image style = "width: 30%" src = "dance.jpg" alt = "draft"> </image>
+<br>
+<p class = "margin"></p>
+
+<br>
+<br>
+First, I fiddled around with the copper pieces, trying to find a piece of foam just thick enough so that the it wouldn't short. Then, I used the serial data plotter to monitor how much force I was putting onto it. I set that as my if condition in arduino and wrote the code for a blue LED to light up if the force level was reached.
+<br>
+<br>
+<image style = "width: 30%" src = "setup.jpg" alt = "draft"> </image>
+<br>
+<br>
+I learned a lot about circuits this time around because both the capacitors and the light bulb needed resistors and I had to organize the circuit in a way where the LED and the copper pieces could still get the voltage they needed. I also struggled with the foam in the middle as I thought my code wasn't running for a good 1 hr until someone pointed out that my circuit was probably just shorting because the foam I had was too thin. I found the connection to also sometimes be a little finnicky so I added a half-second delay from touch for the LED.
+<br>
+<br>
+
+This was the final product that I achieved! 
+<br>
+<video autoplay loop muted playsinline style="width:50%; height:auto;">
+  <source src="demo.mp4" type="video/mp4">
+</video>
+<br>
 
 </div>
 </xmp>
